@@ -1,0 +1,5 @@
+---- LFPowerOff_doorclose Matches (4 in 1 files) ----
+UHF_125K.c (User\Source) line 57 : bool LFPowerOff_doorclose=FALSE;   
+OnEvnetLFSend in UHF_125K.c (User\Source) : 	if(LFPowerOff_doorclose==TRUE)   //熄火时门没有动作（全关）
+CAN2IrqFuc in UHF_125K.c (User\Source) : 				LFPowerOff_doorclose=FALSE;            //恢复找钥匙
+CAN1IrqFuc in UHF_125K.c (User\Source) : 					LFPowerOff_doorclose=TRUE;
